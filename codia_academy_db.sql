@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 04, 2023 at 11:58 AM
--- Server version: 10.4.27-MariaDB
--- PHP Version: 8.2.0
+-- Generation Time: Oct 17, 2025 at 10:31 AM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.0.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -191,7 +191,10 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `email`, `password`, `name`, `url`, `phone`, `address`, `city`, `genderr`, `image`, `role`) VALUES
-(17, 'admin', 'admin@admin.com', 'cb9bff6ba1e4e9c51dd288a8e206ae1a', NULL, NULL, NULL, NULL, NULL, NULL, 'user.jpg', 'admin');
+(17, 'admin', 'admin@admin.com', 'cb9bff6ba1e4e9c51dd288a8e206ae1a', NULL, NULL, NULL, NULL, NULL, NULL, 'user.jpg', 'user'),
+(30, 'Abood alagha', 'admin_abood@codia.com', '70873e8580c9900986939611618d7b1e', NULL, NULL, NULL, NULL, NULL, NULL, 'user.jpg', 'admin'),
+(31, 'أ.محمد', 'Lec1@codia.com', '70873e8580c9900986939611618d7b1e', NULL, NULL, NULL, NULL, NULL, NULL, 'user.jpg', 'presenter'),
+(32, 'administrator ', 'admin@codia.ps', 'c3284d0f94606de1fd2af172aba15bf3', NULL, NULL, NULL, NULL, NULL, NULL, 'user.jpg', 'admin');
 
 --
 -- Indexes for dumped tables
@@ -314,7 +317,7 @@ ALTER TABLE `subscribers`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 
 --
 -- Constraints for dumped tables
